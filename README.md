@@ -48,3 +48,7 @@ Make sure to wait until the compute nodes are up and running before running the 
     [[0, 0, 0, 0, 0], [0, 0, 1, 0, 0], [0, 0, 0, 1, 1], [0, 0, 1, 1, 0], [0, 0, 0, 0, 0]]
     Conway's step 3 :
     [[0, 0, 0, 0, 0], [0, 0, 0, 1, 0], [0, 0, 0, 0, 1], [0, 0, 1, 1, 1], [0, 0, 0, 0, 0]]
+    
+**Constraints**
+
+Note that the grid size must be larger than 4x4 in order for the program to work. 
