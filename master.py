@@ -82,15 +82,19 @@ def main():
 	    n, m, steps = [int(x) for x in next(f).split()] # read first line
 	    for line in f: # read rest of lines
 	        grid.append([int(x) for x in line.split()])
-	print "Initial Grid :"
-	print grid
+	print n, m, steps
+	for row in grid:
+		for e in row:
+			print e,
+		print
 	# Calculate each step by distributing the data and merging it back together.
    	for step in xrange(steps):
 		q1, q2, q3, q4 = distribute_data(grid, n, m)
 		grid = calculate(q1, q2, q3, q4, n, m)
-		print "Conway's step", step+1, ":"
-		print grid
-
+		for row in grid:
+			for e in row:
+				print e,
+			print
 
   
 if __name__== "__main__":
